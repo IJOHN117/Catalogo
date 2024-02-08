@@ -5,7 +5,6 @@ import org.example.catalogo.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-
 public class Main {
     public static Scanner dato = new Scanner(System.in);
     public static Scanner datoString = new Scanner(System.in);
@@ -39,7 +38,7 @@ public class Main {
                     altaEstado();
                     break;
                 case 6:
-
+                    reporte();
                     break;
 
                 case 7:
@@ -110,5 +109,46 @@ public class Main {
         String nom_cdd = datoString.nextLine();
         ciudades.add(new Ciudades(clv_cdd,nom_cdd));
         System.out.println("Proveedor registrado > Clave: "+clv_cdd+ " > Nombre:" +nom_cdd);
+    }
+
+    public static void reporte() {
+        System.out.println("Reporte de Catálogo --------------");
+
+        if (!clientes.isEmpty()) {
+            System.out.println("Clientes:");
+            for (Cliente cliente : clientes) {
+                System.out.println("Clave: " + cliente.getClave() + ", Nombre: " + cliente.getNombre());
+            }
+        }
+
+        if (!productos.isEmpty()) {
+            System.out.println("\nProductos:");
+            for (Producto producto : productos) {
+                System.out.println("Clave: " + producto.getClave() + ", Nombre: " + producto.getNombre());
+            }
+        }
+
+        if (!proveedores.isEmpty()) {
+            System.out.println("\nProveedores:");
+            for (Proveedores proveedor : proveedores) {
+                System.out.println("Clave: " + proveedor.getClave() + ", Nombre: " + proveedor.getNombre());
+            }
+        }
+
+        if (!estados.isEmpty()) {
+            System.out.println("\nEstados:");
+            for (Estados estado : estados) {
+                System.out.println("Clave: " + estado.getClave() + ", Nombre: " + estado.getNombre());
+            }
+        }
+
+        if (!ciudades.isEmpty()) {
+            System.out.println("\nCiudades:");
+            for (Ciudades ciudad : ciudades) {
+                System.out.println("Clave: " + ciudad.getClv_cdd() + ", Nombre: " + ciudad.getNom_cdd());
+            }
+        }
+
+        System.out.println("Fin del Reporte --------------");
     }
 }
