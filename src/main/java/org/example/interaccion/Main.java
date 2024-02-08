@@ -1,6 +1,7 @@
 package org.example.interaccion;
 
 import org.example.catalogo.Cliente;
+import org.example.catalogo.Producto;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -11,6 +12,7 @@ public class Main {
     public static Scanner datoString = new Scanner(System.in);
 
     public static ArrayList<Cliente> clientes = new ArrayList<Cliente>();
+    public static ArrayList<Producto> productos = new ArrayList<Producto>();
 
     public static void main(String[] args) {
         int opc;
@@ -23,7 +25,7 @@ public class Main {
                     altaCliente();
                     break;
                 case 2:
-
+                    nuevoProducto();
                     break;
                 case 3:
 
@@ -65,5 +67,16 @@ public class Main {
         clientes.add(new Cliente(clave,nombre));
 
         System.out.println("Se ha creado un nuevo cliente con Clave: "+clave+" y Nombre: "+nombre+" exitosamente!!");
+    }
+    public static void nuevoProducto(){
+
+        System.out.println("Ingrese la clave del producto");
+        int clave = dato.nextInt();
+        System.out.println("Ingrese el nombre del producto");
+        String nombre = datoString.nextLine();
+
+        productos.add(new Producto(clave,nombre));
+
+        System.out.println("Se ingreso un nuevo producto con clave"+clave+"y es un@:"+nombre+"en el sistema");
     }
 }
