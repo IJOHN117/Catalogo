@@ -9,9 +9,9 @@ public class Main {
     public static Scanner dato = new Scanner(System.in);
     public static Scanner datoString = new Scanner(System.in);
 
-    public static ArrayList<Cliente> clientes = new ArrayList<Cliente>();
+    public static ArrayList<Clientes> clientes = new ArrayList<Clientes>();
     public static ArrayList<Estados> estados = new ArrayList<Estados>();
-    public static ArrayList<Producto> productos = new ArrayList<Producto>();
+    public static ArrayList<Productos> productos = new ArrayList<Productos>();
     public static ArrayList<Proveedores> proveedores = new ArrayList<Proveedores>();
     public static ArrayList<Ciudades> ciudades = new ArrayList<Ciudades>();
 
@@ -69,7 +69,7 @@ public class Main {
         System.out.println("Ingrese el nombre del cliente: ");
         String nombre = datoString.nextLine();
 
-        clientes.add(new Cliente(clave,nombre));
+        clientes.add(new Clientes(clave,nombre));
 
         System.out.println("Se ha creado un nuevo cliente con Clave: "+clave+" y Nombre: "+nombre+" exitosamente!!");
     }
@@ -89,7 +89,7 @@ public class Main {
         System.out.println("Ingrese el nombre del producto");
         String nombre = datoString.nextLine();
 
-        productos.add(new Producto(clave,nombre));
+        productos.add(new Productos(clave,nombre));
 
         System.out.println("Se ingreso un nuevo producto con clave"+clave+"y es un@:"+nombre+"en el sistema");
     }
@@ -116,15 +116,15 @@ public class Main {
 
         if (!clientes.isEmpty()) {
             System.out.println("Clientes:");
-            for (Cliente cliente : clientes) {
-                System.out.println("Clave: " + cliente.getClave() + ", Nombre: " + cliente.getNombre());
+            for (Clientes clientes : Main.clientes) {
+                System.out.println("Clave: " + clientes.getClave() + ", Nombre: " + clientes.getNombre());
             }
         }
 
         if (!productos.isEmpty()) {
             System.out.println("\nProductos:");
-            for (Producto producto : productos) {
-                System.out.println("Clave: " + producto.getClave() + ", Nombre: " + producto.getNombre());
+            for (Productos productos : Main.productos) {
+                System.out.println("Clave: " + productos.getClave() + ", Nombre: " + productos.getNombre());
             }
         }
 

@@ -1,15 +1,15 @@
 package org.example.catalogo;
 
-public class Cliente {
+public class Productos {
 
     private int clave;
-
     private String nombre;
 
-    public Cliente() {
+    public Productos(){
+
     }
 
-    public Cliente(int clave, String nombre) {
+    public Productos(int clave, String nombre) {
         this.clave = clave;
         this.nombre = nombre;
     }
@@ -29,10 +29,9 @@ public class Cliente {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
     @Override
     public String toString() {
-        return "Cliente{" +
+        return "Producto{" +
                 "clave=" + clave +
                 ", nombre='" + nombre + '\'' +
                 '}';
