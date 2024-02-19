@@ -152,6 +152,66 @@ public class Ventana {
         //panel registro de Clientes
 
         JPanel panelClientes = new JPanel();
+        panelClientes.setLayout(new BorderLayout());
+
+        JPanel panelCuerpoClientes = new JPanel();
+        panelCuerpoClientes.setLayout(new BoxLayout(panelCuerpoClientes, BoxLayout.Y_AXIS));
+
+        JPanel panelEncabezadoCl = new JPanel();
+        JLabel lblEncabezadoCl = new JLabel("Registro de Clientes");
+        lblEncabezadoCl.setFont(fuenteArial30);
+        panelEncabezadoCl.add(lblEncabezadoCl);
+        panelCuerpoClientes.add(panelEncabezadoCl);
+
+        JPanel panelNombre_Com = new JPanel();
+        JLabel lblNombre_Completo = new JLabel("Nombre Completo:");
+        lblNombre_Completo.setFont(fuenteArial20);
+        JTextField jtxNombre_Completo = new JTextField(20);
+        jtxNombre_Completo.setFont(fuenteArial20);
+        panelNombre_Com.add(lblNombre_Completo);
+        panelNombre_Com.add(jtxNombre_Completo);
+        panelCuerpoClientes.add(panelNombre_Com);
+
+        JPanel panel_Num_Tel_CLientes = new JPanel();
+        JLabel lblNum_Telef_Clientes = new JLabel("Numero Telefonico:");
+        lblNum_Telef_Clientes.setFont(fuenteArial20);
+        JTextField jtxNum_Telef_Clientes = new JTextField(20);
+        jtxNum_Telef_Clientes.setFont(fuenteArial20);
+        panel_Num_Tel_CLientes.add(lblNum_Telef_Clientes);
+        panel_Num_Tel_CLientes.add(jtxNum_Telef_Clientes);
+        panelCuerpoClientes.add(panel_Num_Tel_CLientes);
+
+        JPanel panel_Correo_Elec = new JPanel();
+        JLabel lblCorreo_Elec = new JLabel("Correo Electronico:");
+        lblCorreo_Elec.setFont(fuenteArial20);
+        JTextField jtxCorreo_Elec = new JTextField(20);
+        jtxCorreo_Elec.setFont(fuenteArial20);
+        panel_Correo_Elec.add(lblCorreo_Elec);
+        panel_Correo_Elec.add(jtxCorreo_Elec);
+        panelCuerpoClientes.add(panel_Correo_Elec);
+
+        JPanel panelCiudad = new JPanel();
+        JLabel lblCiudad = new JLabel("Ciudad donde reside:");
+        lblCiudad.setFont(fuenteArial20);
+        JTextField jtxCiudad = new JTextField(20);
+        jtxCiudad.setFont(fuenteArial20);
+        panelCiudad.add(lblCiudad);
+        panelCiudad.add(jtxCiudad);
+        panelCuerpoClientes.add(panelCiudad);
+
+        JPanel panelDireccion_Cliente = new JPanel();
+        JLabel lblDireccion_Cliente = new JLabel("Direccion:");
+        lblDireccion_Cliente.setFont(fuenteArial20);
+        JTextField jtxDireccion_Cliente = new JTextField(20);
+        jtxDireccion_Cliente.setFont(fuenteArial20);
+        panelDireccion_Cliente.add(lblDireccion_Cliente);
+        panelDireccion_Cliente.add(jtxDireccion_Cliente);
+        panelCuerpoClientes.add(panelDireccion_Cliente);
+
+        panelClientes.add(panelCuerpoClientes);
+
+        JButton jBtnRegistrarClientes = new JButton("Registrar Cliente");
+        panelClientes.add(jBtnRegistrarClientes, BorderLayout.SOUTH);
 
 
         //panel registro de Productos
