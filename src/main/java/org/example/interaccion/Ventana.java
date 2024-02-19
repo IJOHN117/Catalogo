@@ -216,6 +216,50 @@ public class Ventana {
 
         //panel registro de Productos
         JPanel panelProductos = new JPanel();
+        JLabel lblEncabezadoPr = new JLabel("Registro de Proveedores");
+        lblEncabezadoPr.setFont(fuenteArial30);
+        panelProductos.add(lblEncabezadoPr, BorderLayout.NORTH);
+
+        JLabel lblNombre_Producto = new JLabel("Nombre del Producto");
+        lblNombre_Producto.setFont(fuenteArial20);
+        JTextField jtxNombre_Producto = new JTextField(1);
+        jtxNombre_Producto.setFont(fuenteArial20);
+        panelClientes.add(lblNombre_Producto);
+        panelClientes.add(jtxNombre_Producto);
+
+        JLabel lblClave_Producto = new JLabel("Clave del producto");
+        lblClave_Producto.setFont(fuenteArial20);
+        JTextField jtxClave_Producto = new JTextField(1);
+        jtxClave_Producto.setFont(fuenteArial20);
+        panelClientes.add(lblClave_Producto);
+        panelClientes.add(jtxClave_Producto);
+
+        JLabel lblPrecio_Producto = new JLabel("Precio del producto");
+        lblPrecio_Producto.setFont(fuenteArial20);
+        JTextField jtxPrecio_Producto = new JTextField(1);
+        jtxPrecio_Producto.setFont(fuenteArial20);
+        panelClientes.add(lblPrecio_Producto);
+        panelClientes.add(jtxPrecio_Producto);
+
+        JLabel lblCategoria_Producto = new JLabel("Categoría del producto");
+        lblCategoria_Producto.setFont(fuenteArial20);
+        JTextField jtxCategoria_Producto = new JTextField(1);
+        jtxCategoria_Producto.setFont(fuenteArial20);
+        panelClientes.add(lblCategoria_Producto);
+        panelClientes.add(jtxCategoria_Producto);
+
+        JLabel lblProveedor_Producto = new JLabel("Proveedor del producto");
+        lblProveedor_Producto.setFont(fuenteArial20);
+        JTextField jtxProveedor_Producto = new JTextField(1);
+        jtxProveedor_Producto.setFont(fuenteArial20);
+        panelClientes.add(lblProveedor_Producto);
+        panelClientes.add(jtxProveedor_Producto);
+
+
+        JButton jBtnRegistrarProductos = new JButton("Registrar");
+        panelClientes.add(jBtnRegistrarProductos, BorderLayout.SOUTH);
+
+
 
 
 
