@@ -15,8 +15,10 @@ public class Ventana {
         VentanaC.setIconImage(icono.getImage());
 
         Font fuenteArial40 = new Font("Arial Narrow", Font.BOLD, 40);
+
         Font fuenteArial30 = new Font("Arial", Font.BOLD, 30);
         Font fuenteArial20 = new Font("Arial", Font.BOLD, 20);
+        Font fuenteArial10 = new Font("Arial", Font.BOLD, 10);
 
         //panel General con Gridlayout
         JPanel panelGeneral = new JPanel();
@@ -56,6 +58,9 @@ public class Ventana {
         panelCiudades.add(lblCodigo_Postal);
         panelCiudades.add(jtxCodigo_Postal);
 
+        JButton jBtnRegistrarCiudad = new JButton("Registrar");
+        panelCiudades.add(jBtnRegistrarCiudad, BorderLayout.SOUTH);
+
         //panel registro de Estados
         JPanel panelEstados = new JPanel();
         JLabel lblEncabezadoE = new JLabel("Registro de Estados");
@@ -75,6 +80,9 @@ public class Ventana {
         jtxClave.setFont(fuenteArial20);
         panelEstados.add(lblClave);
         panelEstados.add(jtxClave);
+
+        JButton jBtnRegistrarEstados = new JButton("Registrar");
+        panelEstados.add(jBtnRegistrarEstados, BorderLayout.SOUTH);
 
         //panel registro de Proveedores
         JPanel panelProveedores = new JPanel();
@@ -103,12 +111,118 @@ public class Ventana {
         panelProveedores.add(lblNum_Telef);
         panelProveedores.add(jtxNum_Telef);
 
+        JButton jBtnRegistrarProveedores = new JButton("Registrar");
+        panelProveedores.add(jBtnRegistrarProveedores, BorderLayout.SOUTH);
+
+
         //panel registro de Clientes
         JPanel panelClientes = new JPanel();
+        JLabel lblEncabezadoCl = new JLabel("Registro de Clientes");
+        lblEncabezadoCl.setFont(fuenteArial30);
+        panelClientes.add(lblEncabezadoCl, BorderLayout.NORTH);
+
+        JLabel lblNombre_Completo = new JLabel("Nombre Completo");
+        lblNombre_Completo.setFont(fuenteArial20);
+        JTextField jtxNombre_Completo = new JTextField(1);
+        jtxNombre_Completo.setFont(fuenteArial20);
+        panelClientes.add(lblNombre_Completo);
+        panelClientes.add(jtxNombre_Completo);
+
+        JLabel lblNum_Telef_Clientes = new JLabel("Numero Telefonoco");
+        lblNum_Telef_Clientes.setFont(fuenteArial20);
+        JTextField jtxNum_Telef_Clientes = new JTextField(1);
+        jtxNum_Telef_Clientes.setFont(fuenteArial20);
+        panelClientes.add(lblNum_Telef_Clientes);
+        panelClientes.add(jtxNum_Telef_Clientes);
+
+        JLabel lblCorreo_Elec = new JLabel("Correo Electronico");
+        lblCorreo_Elec.setFont(fuenteArial20);
+        JTextField jtxCorreo_Elec = new JTextField(1);
+        jtxCorreo_Elec.setFont(fuenteArial20);
+        panelClientes.add(lblCorreo_Elec);
+        panelClientes.add(jtxCorreo_Elec);
+
+        JLabel lblEstado = new JLabel("Estado donde recide");
+        lblEstado.setFont(fuenteArial20);
+        JComboBox <String> jCmbEstados = new JComboBox<>();
+        jCmbEstados.setFont(fuenteArial10);
+        jCmbEstados.addItem("Aguascalientes");
+        jCmbEstados.addItem("Baja California");
+        jCmbEstados.addItem("Campeche");
+        jCmbEstados.addItem("Chiapas");
+        jCmbEstados.addItem("Chihuahua");
+        jCmbEstados.addItem("Ciudad de México");
+        jCmbEstados.addItem("Coahuila");
+        jCmbEstados.addItem("Colima");
+        jCmbEstados.addItem("Durango");
+        jCmbEstados.addItem("Guanajuato");
+        jCmbEstados.addItem("Jalisco");
+        jCmbEstados.addItem("Michoacán");
+        jCmbEstados.addItem("Oaxaca");
+        jCmbEstados.addItem("Veracruz");
+
+        JLabel lblCiudad = new JLabel("Ciudad donde recide");
+        lblCiudad.setFont(fuenteArial20);
+        JTextField jtxCiudad = new JTextField(1);
+        jtxCiudad.setFont(fuenteArial20);
+        panelClientes.add(lblCiudad);
+        panelClientes.add(jtxCiudad);
+
+        JLabel lblDireccion_Cliente = new JLabel("Direccion");
+        lblDireccion_Cliente.setFont(fuenteArial20);
+        JTextField jtxDireccion_Cliente = new JTextField(1);
+        jtxDireccion_Cliente.setFont(fuenteArial20);
+        panelClientes.add(lblDireccion_Cliente);
+        panelClientes.add(jtxDireccion_Cliente);
+
+
+        JButton jBtnRegistrarClientes = new JButton("Registrar");
+        panelClientes.add(jBtnRegistrarClientes, BorderLayout.SOUTH);
 
         //panel registro de Productos
         JPanel panelProductos = new JPanel();
+        JLabel lblEncabezadoPr = new JLabel("Registro de Proveedores");
+        lblEncabezadoPr.setFont(fuenteArial30);
+        panelProductos.add(lblEncabezadoPr, BorderLayout.NORTH);
 
+        JLabel lblNombre_Producto = new JLabel("Nombre del Producto");
+        lblNombre_Producto.setFont(fuenteArial20);
+        JTextField jtxNombre_Producto = new JTextField(1);
+        jtxNombre_Producto.setFont(fuenteArial20);
+        panelClientes.add(lblNombre_Producto);
+        panelClientes.add(jtxNombre_Producto);
+
+        JLabel lblClave_Producto = new JLabel("Clave del producto");
+        lblClave_Producto.setFont(fuenteArial20);
+        JTextField jtxClave_Producto = new JTextField(1);
+        jtxClave_Producto.setFont(fuenteArial20);
+        panelClientes.add(lblClave_Producto);
+        panelClientes.add(jtxClave_Producto);
+
+        JLabel lblPrecio_Producto = new JLabel("Precio del producto");
+        lblPrecio_Producto.setFont(fuenteArial20);
+        JTextField jtxPrecio_Producto = new JTextField(1);
+        jtxPrecio_Producto.setFont(fuenteArial20);
+        panelClientes.add(lblPrecio_Producto);
+        panelClientes.add(jtxPrecio_Producto);
+
+        JLabel lblCategoria_Producto = new JLabel("Categoría del producto");
+        lblCategoria_Producto.setFont(fuenteArial20);
+        JTextField jtxCategoria_Producto = new JTextField(1);
+        jtxCategoria_Producto.setFont(fuenteArial20);
+        panelClientes.add(lblCategoria_Producto);
+        panelClientes.add(jtxCategoria_Producto);
+
+        JLabel lblProveedor_Producto = new JLabel("Proveedor del producto");
+        lblProveedor_Producto.setFont(fuenteArial20);
+        JTextField jtxProveedor_Producto = new JTextField(1);
+        jtxProveedor_Producto.setFont(fuenteArial20);
+        panelClientes.add(lblProveedor_Producto);
+        panelClientes.add(jtxProveedor_Producto);
+
+
+        JButton jBtnRegistrarProductos = new JButton("Registrar");
+        panelClientes.add(jBtnRegistrarProductos, BorderLayout.SOUTH);
 
 
         //sistema de muestra y cierre
