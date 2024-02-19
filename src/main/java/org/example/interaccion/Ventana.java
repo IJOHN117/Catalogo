@@ -2,6 +2,8 @@ package org.example.interaccion;
 import javax.swing.*;
 import java.awt.*;
 
+import static javax.swing.BoxLayout.*;
+
 
 public class Ventana {
     public static void main(String[] args) {
@@ -10,6 +12,9 @@ public class Ventana {
         VentanaC.setSize(1920, 1080);
         VentanaC.setBackground(Color.white);
         VentanaC.setResizable(true);
+
+        //Para mostrar la ventana centrada en pantalla
+        VentanaC.setLocationRelativeTo(null);
 
         ImageIcon icono = new ImageIcon("C://Users//Jsanc//IdeaProjects//EDAD2023//Catalogo//src//main//java//org//example//LOGO-VERTICAL-TECNM.png");
         VentanaC.setIconImage(icono.getImage());
@@ -36,82 +41,129 @@ public class Ventana {
         VentanaC.add(panelEncabezado,BorderLayout.NORTH);
 
         //Panel Cuerpo--------------------------------------------------------------------------------------------------
+
         //panel registro de ciudades
         JPanel panelCiudades = new JPanel();
+        panelCiudades.setLayout(new BorderLayout());
+
+        JPanel panelCuerpoCiudades = new JPanel();
+        panelCuerpoCiudades.setLayout(new BoxLayout(panelCuerpoCiudades, Y_AXIS));
+
+        JPanel panelEncabezadoCiudades = new JPanel();
         JLabel lblEncabezadoC = new JLabel("Registro de Ciudades");
         lblEncabezadoC.setFont(fuenteArial30);
-        panelCiudades.add(lblEncabezadoC, BorderLayout.NORTH);
+        panelEncabezadoCiudades.add(lblEncabezadoC);
+        panelCuerpoCiudades.add(panelEncabezadoCiudades);
 
-        JLabel lblNombre_Ciudades = new JLabel("Nombre de la ciudad");
+        JPanel panelNombreCiudades = new JPanel();
+        JLabel lblNombre_Ciudades = new JLabel("Nombre de la ciudad: ");
         lblNombre_Ciudades.setFont(fuenteArial20);
-        JTextField jtxNombre_Ciudades = new JTextField(1);
+        JTextField jtxNombre_Ciudades = new JTextField(20);
         jtxNombre_Ciudades.setFont(fuenteArial20);
-        panelCiudades.add(lblNombre_Ciudades);
-        panelCiudades.add(jtxNombre_Ciudades);
+        panelNombreCiudades.add(lblNombre_Ciudades);
+        panelNombreCiudades.add(jtxNombre_Ciudades);
+        panelCuerpoCiudades.add(panelNombreCiudades);
 
-        JLabel lblCodigo_Postal = new JLabel("Codigo postal");
-        lblNombre_Ciudades.setFont(fuenteArial20);
-        JTextField jtxCodigo_Postal = new JTextField(1);
+        JPanel panelCodigoPostal = new JPanel();
+        JLabel lblCodigo_Postal = new JLabel("Codigo postal:            ");
+        lblCodigo_Postal.setFont(fuenteArial20);
+        JTextField jtxCodigo_Postal = new JTextField(20);
         jtxCodigo_Postal.setFont(fuenteArial20);
-        panelCiudades.add(lblCodigo_Postal);
-        panelCiudades.add(jtxCodigo_Postal);
+        panelCodigoPostal.add(lblCodigo_Postal);
+        panelCodigoPostal.add(jtxCodigo_Postal);
+        panelCuerpoCiudades.add(panelCodigoPostal);
+
+        panelCiudades.add("Center",panelCuerpoCiudades);
 
         //panel registro de Estados
         JPanel panelEstados = new JPanel();
+        panelEstados.setLayout(new BorderLayout());
+
+        JPanel panelCuerpoEstados = new JPanel();
+        panelCuerpoEstados.setLayout(new BoxLayout(panelCuerpoEstados, Y_AXIS));
+
+        JPanel panelEncabezadoE = new JPanel();
         JLabel lblEncabezadoE = new JLabel("Registro de Estados");
         lblEncabezadoE.setFont(fuenteArial30);
-        panelEstados.add(lblEncabezadoE, BorderLayout.NORTH);
+        panelEncabezadoE.add(lblEncabezadoE);
+        panelCuerpoEstados.add(panelEncabezadoE);
 
-        JLabel lblNombre_Estados = new JLabel("Nombre del Estado");
+        JPanel panelNombreE = new JPanel();
+        JLabel lblNombre_Estados = new JLabel("Nombre del Estado: ");
         lblNombre_Estados.setFont(fuenteArial20);
-        JTextField jtxNombre_Estados = new JTextField(1);
+        JTextField jtxNombre_Estados = new JTextField(20);
         jtxNombre_Estados.setFont(fuenteArial20);
-        panelEstados.add(lblNombre_Estados);
-        panelEstados.add(jtxNombre_Estados);
+        panelNombreE.add(lblNombre_Estados);
+        panelNombreE.add(jtxNombre_Estados);
+        panelCuerpoEstados.add(panelNombreE);
 
-        JLabel lblClave = new JLabel("Clave");
+        JPanel panelClaveE = new JPanel();
+        JLabel lblClave = new JLabel("Clave:                      ");
         lblClave.setFont(fuenteArial20);
-        JTextField jtxClave = new JTextField(1);
+        JTextField jtxClave = new JTextField(20);
         jtxClave.setFont(fuenteArial20);
-        panelEstados.add(lblClave);
-        panelEstados.add(jtxClave);
+        panelClaveE.add(lblClave);
+        panelClaveE.add(jtxClave);
+        panelCuerpoEstados.add(panelClaveE);
+
+        panelEstados.add("Center",panelCuerpoEstados);
 
         //panel registro de Proveedores
         JPanel panelProveedores = new JPanel();
+        panelProveedores.setLayout(new BorderLayout());
+
+        JPanel panelCuerpoProveedores = new JPanel();
+        panelCuerpoProveedores.setLayout(new BoxLayout(panelCuerpoProveedores, Y_AXIS));
+
+        JPanel panelEncabezadoP = new JPanel();
         JLabel lblEncabezadoP = new JLabel("Registro de Proveedores");
         lblEncabezadoP.setFont(fuenteArial30);
-        panelProveedores.add(lblEncabezadoP, BorderLayout.NORTH);
+        panelEncabezadoP.add(lblEncabezadoP);
+        panelCuerpoProveedores.add(panelEncabezadoP);
 
-        JLabel lblNobre_Proveedor = new JLabel("Nombre del Proveedor");
-        lblNobre_Proveedor.setFont(fuenteArial20);
-        JTextField jtxNobre_Proveedor = new JTextField(1);
+        JPanel panelNombreP = new JPanel();
+        JLabel lblNombre_Proveedor = new JLabel("Nombre del Proveedor: ");
+        lblNombre_Proveedor.setFont(fuenteArial20);
+        JTextField jtxNobre_Proveedor = new JTextField(20);
         jtxNobre_Proveedor.setFont(fuenteArial20);
-        panelProveedores.add(lblNobre_Proveedor);
-        panelProveedores.add(jtxNobre_Proveedor);
+        panelNombreP.add(lblNombre_Proveedor);
+        panelNombreP.add(jtxNobre_Proveedor);
+        panelCuerpoProveedores.add(panelNombreP);
 
-        JLabel lblDireccion = new JLabel("Direccion");
+        JPanel panelDireccionP = new JPanel();
+        JLabel lblDireccion = new JLabel("Direccion:                     ");
         lblDireccion.setFont(fuenteArial20);
-        JTextField jtxDireccion = new JTextField(1);
+        JTextField jtxDireccion = new JTextField(20);
         jtxDireccion.setFont(fuenteArial20);
-        panelProveedores.add(lblDireccion);
-        panelProveedores.add(jtxDireccion);
+        panelDireccionP.add(lblDireccion);
+        panelDireccionP.add(jtxDireccion);
+        panelCuerpoProveedores.add(panelDireccionP);
 
-        JLabel lblNum_Telef = new JLabel("Numero Telefonoco");
+        JPanel panelNumTelP = new JPanel();
+        JLabel lblNum_Telef = new JLabel("Numero Telefonico:      ");
         lblNum_Telef.setFont(fuenteArial20);
-        JTextField jtxNum_Telef = new JTextField(1);
+        JTextField jtxNum_Telef = new JTextField(20);
         jtxNum_Telef.setFont(fuenteArial20);
-        panelProveedores.add(lblNum_Telef);
-        panelProveedores.add(jtxNum_Telef);
+        panelNumTelP.add(lblNum_Telef);
+        panelNumTelP.add(jtxNum_Telef);
+        panelCuerpoProveedores.add(panelNumTelP);
 
+        panelProveedores.add(panelCuerpoProveedores);
         //panel registro de Clientes
+
         JPanel panelClientes = new JPanel();
+
 
         //panel registro de Productos
         JPanel panelProductos = new JPanel();
 
 
 
+
         //sistema de muestra y cierre
+
+        //panelGeneral.add();
+
         VentanaC.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         VentanaC.setVisible(true);
     }
