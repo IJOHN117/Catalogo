@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.example.visual.FRMEstados">
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.example.visual.FRMCiudades">
   <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="BorderLayout" hgap="0" vgap="0">
     <constraints>
-      <xy x="20" y="20" width="950" height="539"/>
+      <xy x="20" y="20" width="950" height="639"/>
     </constraints>
     <properties>
-      <background color="-1452033"/>
-      <doubleBuffered value="true"/>
       <preferredSize width="1300" height="700"/>
     </properties>
     <border type="none"/>
     <children>
-      <grid id="19a09" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="79f40" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="50"/>
         <constraints border-constraint="North"/>
         <properties>
@@ -21,7 +19,7 @@
         </properties>
         <border type="none"/>
         <children>
-          <component id="764e4" class="javax.swing.JLabel">
+          <component id="5fb5d" class="javax.swing.JLabel">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -31,7 +29,7 @@
               <text value="    Catálogo"/>
             </properties>
           </component>
-          <toolbar id="b6c18">
+          <toolbar id="6fc06">
             <constraints>
               <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="6" fill="0" indent="0" use-parent-layout="false">
                 <preferred-size width="-1" height="20"/>
@@ -47,7 +45,7 @@
             </clientProperties>
             <border type="none"/>
             <children>
-              <component id="19a25" class="javax.swing.JButton" binding="estadosButton" default-binding="true">
+              <component id="bbc46" class="javax.swing.JButton" binding="estadosButton" default-binding="true">
                 <constraints/>
                 <properties>
                   <background color="-1452033"/>
@@ -59,7 +57,7 @@
                   <text value="Estados"/>
                 </properties>
               </component>
-              <component id="c5cc1" class="javax.swing.JButton" binding="ciudadesButton" default-binding="true">
+              <component id="1e856" class="javax.swing.JButton" binding="ciudadesButton" default-binding="true">
                 <constraints/>
                 <properties>
                   <background color="-1452033"/>
@@ -68,7 +66,7 @@
                   <text value="Ciudades"/>
                 </properties>
               </component>
-              <component id="4239f" class="javax.swing.JButton" binding="proveedoresButton" default-binding="true">
+              <component id="ec9c1" class="javax.swing.JButton" binding="proveedoresButton" default-binding="true">
                 <constraints/>
                 <properties>
                   <background color="-1452033"/>
@@ -77,7 +75,7 @@
                   <text value="Proveedores"/>
                 </properties>
               </component>
-              <component id="b595e" class="javax.swing.JButton" binding="clientesButton" default-binding="true">
+              <component id="b6e66" class="javax.swing.JButton" binding="clientesButton" default-binding="true">
                 <constraints/>
                 <properties>
                   <background color="-1452033"/>
@@ -86,7 +84,7 @@
                   <text value="Clientes"/>
                 </properties>
               </component>
-              <component id="1cf94" class="javax.swing.JButton" binding="productosButton" default-binding="true">
+              <component id="b71cf" class="javax.swing.JButton" binding="productosButton" default-binding="true">
                 <constraints/>
                 <properties>
                   <background color="-1452033"/>
@@ -99,7 +97,7 @@
           </toolbar>
         </children>
       </grid>
-      <grid id="eff3e" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="9df32" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="50" bottom="50" right="50"/>
         <constraints border-constraint="Center"/>
         <properties>
@@ -109,7 +107,7 @@
         </properties>
         <border type="none"/>
         <children>
-          <grid id="d4cac" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="fc0a8" layout-manager="GridLayoutManager" row-count="5" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="10" left="20" bottom="10" right="10"/>
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
@@ -121,18 +119,18 @@
             </properties>
             <border type="none"/>
             <children>
-              <component id="e9920" class="javax.swing.JLabel">
+              <component id="18014" class="javax.swing.JLabel">
                 <constraints>
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <font name="Bahnschrift" size="32" style="1"/>
-                  <text value="Registro de Estados "/>
+                  <text value="Registro de Ciudades "/>
                 </properties>
               </component>
-              <component id="6ae24" class="javax.swing.JButton" binding="registrarButton" default-binding="true">
+              <component id="bbb69" class="javax.swing.JButton" binding="registrarButton" default-binding="true">
                 <constraints>
-                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false">
                     <preferred-size width="106" height="31"/>
                   </grid>
                 </constraints>
@@ -146,9 +144,9 @@
                   <hideActionText class="java.lang.Boolean" value="false"/>
                 </clientProperties>
               </component>
-              <component id="fdc5" class="javax.swing.JButton" binding="limpiarButton" default-binding="true">
+              <component id="7f00" class="javax.swing.JButton" binding="limpiarButton" default-binding="true">
                 <constraints>
-                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
                     <preferred-size width="106" height="31"/>
                   </grid>
                 </constraints>
@@ -159,14 +157,14 @@
                   <text value="Limpiar"/>
                 </properties>
               </component>
-              <hspacer id="97997">
+              <hspacer id="398de">
                 <constraints>
-                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
               </hspacer>
-              <component id="a0753" class="javax.swing.JSeparator">
+              <component id="e2a92" class="javax.swing.JSeparator">
                 <constraints>
-                  <grid row="1" column="0" row-span="2" col-span="3" vsize-policy="6" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                  <grid row="1" column="0" row-span="3" col-span="3" vsize-policy="6" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="2" height="3"/>
                   </grid>
                 </constraints>
@@ -175,7 +173,7 @@
                   <foreground color="-16777216"/>
                 </properties>
               </component>
-              <grid id="d10fb" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+              <grid id="604d" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
                 <margin top="10" left="0" bottom="0" right="0"/>
                 <constraints>
                   <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
@@ -185,79 +183,117 @@
                 </properties>
                 <border type="none"/>
                 <children>
-                  <component id="6a656" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+                  <component id="c2d59" class="javax.swing.JTextField" binding="textField1" default-binding="true">
                     <constraints>
                       <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                        <preferred-size width="150" height="-1"/>
+                        <preferred-size width="618" height="44"/>
                       </grid>
                     </constraints>
                     <properties>
                       <font name="Bahnschrift" size="28" style="1"/>
                     </properties>
                   </component>
-                  <component id="c5fd4" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+                  <component id="dac46" class="javax.swing.JTextField" binding="textField2" default-binding="true">
                     <constraints>
                       <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                        <preferred-size width="150" height="-1"/>
+                        <preferred-size width="618" height="44"/>
                       </grid>
                     </constraints>
                     <properties>
                       <font name="Bahnschrift" size="28" style="1"/>
                     </properties>
                   </component>
-                  <component id="dbab6" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+                  <component id="a9f6c" class="javax.swing.JLabel">
                     <constraints>
-                      <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <font name="Bahnschrift" size="28" style="1"/>
-                      <model>
-                        <item value="Activo"/>
-                        <item value="Inactivo"/>
-                      </model>
-                    </properties>
-                  </component>
-                  <component id="a6f55" class="javax.swing.JLabel">
-                    <constraints>
-                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="618" height="34"/>
+                      </grid>
                     </constraints>
                     <properties>
                       <font name="Bahnschrift" size="28" style="1"/>
                       <text value="Nombre"/>
                     </properties>
                   </component>
-                  <component id="59507" class="javax.swing.JLabel">
+                  <component id="17f16" class="javax.swing.JLabel">
                     <constraints>
-                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="618" height="34"/>
+                      </grid>
                     </constraints>
                     <properties>
                       <font name="Bahnschrift" size="28" style="1"/>
-                      <text value="Clave"/>
+                      <text value="Codigo Postal"/>
                     </properties>
                   </component>
-                  <component id="c7b51" class="javax.swing.JLabel">
+                  <vspacer id="4094f">
                     <constraints>
-                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                    </constraints>
-                    <properties>
-                      <font name="Bahnschrift" size="28" style="1"/>
-                      <text value="Disposición"/>
-                    </properties>
-                  </component>
-                  <vspacer id="1ee6c">
-                    <constraints>
-                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false">
+                        <preferred-size width="618" height="14"/>
+                      </grid>
                     </constraints>
                   </vspacer>
+                  <component id="47a06" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+                    <constraints>
+                      <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="618" height="35"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <focusable value="false"/>
+                      <font name="Bahnschrift" size="20" style="1"/>
+                      <model>
+                        <item value="Aguascalientes "/>
+                        <item value="Baja California "/>
+                        <item value="Baja California Sur "/>
+                        <item value="Campeche "/>
+                        <item value="Chiapas"/>
+                        <item value="Chihuahua "/>
+                        <item value="Ciudad de México "/>
+                        <item value="Coahuila "/>
+                        <item value="Colima "/>
+                        <item value="Durango "/>
+                        <item value="Estado de México "/>
+                        <item value="Guanajuato "/>
+                        <item value="Guerrero "/>
+                        <item value="Hidalgo "/>
+                        <item value="Jalisco "/>
+                        <item value="Michoacán "/>
+                        <item value="Morelos "/>
+                        <item value="Nayarit "/>
+                        <item value="Nuevo León "/>
+                        <item value="Oaxaca "/>
+                        <item value="Puebla "/>
+                        <item value="Querétaro "/>
+                        <item value="Quintana Roo "/>
+                        <item value="San Luis Potosí "/>
+                        <item value="Sinaloa "/>
+                        <item value="Sonora "/>
+                        <item value="Tabasco "/>
+                        <item value="Tamaulipas "/>
+                        <item value="Tlaxcala "/>
+                        <item value="Veracruz "/>
+                        <item value="Yucatán "/>
+                        <item value="Zacatecas "/>
+                      </model>
+                    </properties>
+                  </component>
+                  <component id="1d8c3" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="618" height="34"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <font name="Bahnschrift" size="28" style="1"/>
+                      <text value="Estado"/>
+                    </properties>
+                  </component>
                 </children>
               </grid>
             </children>
           </grid>
         </children>
       </grid>
-      <vspacer id="fcf30">
-        <constraints border-constraint="West"/>
-      </vspacer>
     </children>
   </grid>
 </form>
